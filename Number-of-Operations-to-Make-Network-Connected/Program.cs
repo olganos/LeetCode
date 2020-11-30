@@ -68,14 +68,15 @@ namespace Number_of_Operations_to_Make_Network_Connected
 
             int extraConnections = 0;
             int root = 0;
-            var union = new Union(n);
+            // var union = new QuickFind(n);
+            var union = new WeightedQuickUnion(n);
             for (var i = 0; i < connections.Length; i++)
             {
-                if (union.connected(connections[i][0], connections[i][1]))
+                if (union.Connected(connections[i][0], connections[i][1]))
                     extraConnections++;
                 else
                 {
-                    root = union.union(connections[i][0], connections[i][1]); ;
+                    root = union.Union(connections[i][0], connections[i][1]); ;
                 }
             }
 
@@ -83,9 +84,9 @@ namespace Number_of_Operations_to_Make_Network_Connected
             var extraConnectionsCounter = 0;
             for (var i = 0; i < n; i++)
             {
-                if (!union.connected(i, root))
+                if (!union.Connected(i, root))
                 {
-                    root = union.union(i, root);
+                    root = union.Union(i, root);
                     extraConnectionsCounter++;
                     extraConnections--;
                     if (extraConnections < 0)
@@ -93,55 +94,6 @@ namespace Number_of_Operations_to_Make_Network_Connected
                 }
             }
             return extraConnections < 0 ? -1 : extraConnectionsCounter;
-        }
-    }
-
-    public class Union
-    {
-        private int[] ids { get; set; }
-        private int size;
-
-        public Union(int n)
-        {
-            if (n <= 0)
-                throw new ArgumentOutOfRangeException();
-
-            size = n;
-            ids = new int[n];
-            for (var i = 0; i < n; i++)
-            {
-                ids[i] = i;
-            }
-        }
-
-        public bool connected(int p, int q)
-        {
-            if (p >= size || q >= size)
-                throw new ArgumentOutOfRangeException();
-
-            return ids[p] == ids[q];
-        }
-
-        /// <summary>
-        /// return current root
-        /// </summary>
-        /// <param name="p"></param>
-        /// <param name="q"></param>
-        /// <returns></returns>
-        public int union(int p, int q)
-        {
-            if (p >= size || q >= size)
-                throw new ArgumentOutOfRangeException();
-
-            var rootP = ids[p];
-            var rootQ = ids[q];
-            for (var i = 0; i < size; i++)
-            {
-                if (ids[i] == rootP || ids[i] == rootQ)
-                    ids[i] = rootQ;
-            }
-
-            return rootQ;
         }
     }
 }
