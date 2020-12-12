@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeastRecentlyUsedCache", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number-of-Operations-to-Make-Network-Connected", "Number-of-Operations-to-Make-Network-Connected\Number-of-Operations-to-Make-Network-Connected.csproj", "{8E710C9B-5C6D-43B6-ADA8-358D5E3799D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichestCustomerWealth", "RichestCustomerWealth\RichestCustomerWealth.csproj", "{511A2187-62B1-4B07-A119-B0C42C94995A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichestCustomerWealth", "RichestCustomerWealth\RichestCustomerWealth.csproj", "{511A2187-62B1-4B07-A119-B0C42C94995A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionSwapNodesInPairs", "RecursionSwapNodesInPairs\RecursionSwapNodesInPairs.csproj", "{3D3CFE5A-EFF9-4812-BD5C-6C3872AF8CBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionSwapNodesInPairs", "RecursionSwapNodesInPairs\RecursionSwapNodesInPairs.csproj", "{3D3CFE5A-EFF9-4812-BD5C-6C3872AF8CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllNumbersDisappearedInArray", "FindAllNumbersDisappearedInArray\FindAllNumbersDisappearedInArray.csproj", "{7A813322-F7E2-4445-A04C-243D212821FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3D3CFE5A-EFF9-4812-BD5C-6C3872AF8CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D3CFE5A-EFF9-4812-BD5C-6C3872AF8CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D3CFE5A-EFF9-4812-BD5C-6C3872AF8CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A813322-F7E2-4445-A04C-243D212821FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A813322-F7E2-4445-A04C-243D212821FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A813322-F7E2-4445-A04C-243D212821FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A813322-F7E2-4445-A04C-243D212821FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
