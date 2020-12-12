@@ -12,7 +12,7 @@ namespace RecursionSwapNodesInPairs
         {
             // Input: head = [1,2,3,4]
             // Output:[2,1,4,3]
-            var solution = new Solution();
+            var solution = new Solution2();
             var lastNode = new ListNode(4);
             var thirdNode = new ListNode(3, lastNode);
             var secondNode = new ListNode(2, thirdNode);
@@ -53,18 +53,28 @@ namespace RecursionSwapNodesInPairs
         }
     }
 
-
-    public class ListNode
+    /// <summary>
+    /// Not my solution
+    /// </summary>
+    public class Solution2
     {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
+        public ListNode SwapPairs(ListNode head)
         {
-            this.val = val;
-            this.next = next;
+            if (head ?.next == null)
+                return head;
+
+            ListNode first = head.next;
+            ListNode second = head.next.next;
+            first.next = head;
+            head.next = SwapPairs(second);          //Recursive Call
+
+            return first;
         }
     }
 
+    /// <summary>
+    /// My solution
+    /// </summary>
     public class Solution
     {
         public ListNode SwapPairs(ListNode head)
@@ -104,6 +114,17 @@ namespace RecursionSwapNodesInPairs
                 next.next = first;
 
             Traversing(ref second, rest);
+        }
+    }
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+        public ListNode(int val = 0, ListNode next = null)
+        {
+            this.val = val;
+            this.next = next;
         }
     }
 }
