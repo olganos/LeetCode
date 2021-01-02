@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionSwapNodesInPairs",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindAllNumbersDisappearedInArray", "FindAllNumbersDisappearedInArray\FindAllNumbersDisappearedInArray.csproj", "{7A813322-F7E2-4445-A04C-243D212821FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implement-Queue-using-Stacks", "Implement-Queue-using-Stacks\Implement-Queue-using-Stacks.csproj", "{F4057707-6FB0-4604-9817-98A9A782F7AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Implement-Queue-using-Stacks", "Implement-Queue-using-Stacks\Implement-Queue-using-Stacks.csproj", "{F4057707-6FB0-4604-9817-98A9A782F7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F4057707-6FB0-4604-9817-98A9A782F7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4057707-6FB0-4604-9817-98A9A782F7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4057707-6FB0-4604-9817-98A9A782F7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
