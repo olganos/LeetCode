@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Implement-Queue-using-Stack
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "TwoSum\TwoSum.csproj", "{E7DC313C-6EC1-4A3C-BE3C-F9FD1CBBB00C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maximum-Points-You-Can-Obtain-from-Cards", "Maximum-Points-You-Can-Obtain-from-Cards\Maximum-Points-You-Can-Obtain-from-Cards.csproj", "{F76D7699-6E8C-45F3-B17F-E7FAF1C63EFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maximum-Points-You-Can-Obtain-from-Cards", "Maximum-Points-You-Can-Obtain-from-Cards\Maximum-Points-You-Can-Obtain-from-Cards.csproj", "{F76D7699-6E8C-45F3-B17F-E7FAF1C63EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit", "Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit\Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit.csproj", "{90170A54-DAD2-407F-B85F-111A70CABE44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{F76D7699-6E8C-45F3-B17F-E7FAF1C63EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F76D7699-6E8C-45F3-B17F-E7FAF1C63EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F76D7699-6E8C-45F3-B17F-E7FAF1C63EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90170A54-DAD2-407F-B85F-111A70CABE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90170A54-DAD2-407F-B85F-111A70CABE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90170A54-DAD2-407F-B85F-111A70CABE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90170A54-DAD2-407F-B85F-111A70CABE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
