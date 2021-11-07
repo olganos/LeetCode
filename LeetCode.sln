@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Add-Two-Numbers", "Add-Two-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlusOne", "PlusOne\PlusOne.csproj", "{B4B43DB5-0445-4128-B412-BB9023E9FA01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerRateLimiter", "LoggerRateLimiter\LoggerRateLimiter.csproj", "{050F84F2-0C0B-4C98-8092-9C8792D134B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerRateLimiter", "LoggerRateLimiter\LoggerRateLimiter.csproj", "{050F84F2-0C0B-4C98-8092-9C8792D134B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDifferenceInThreeMoves", "MinimumDifferenceInThreeMoves\MinimumDifferenceInThreeMoves.csproj", "{FA36AEB5-CA8A-411F-93EA-F5193E283DC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{050F84F2-0C0B-4C98-8092-9C8792D134B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{050F84F2-0C0B-4C98-8092-9C8792D134B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{050F84F2-0C0B-4C98-8092-9C8792D134B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA36AEB5-CA8A-411F-93EA-F5193E283DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA36AEB5-CA8A-411F-93EA-F5193E283DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA36AEB5-CA8A-411F-93EA-F5193E283DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA36AEB5-CA8A-411F-93EA-F5193E283DC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
