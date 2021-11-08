@@ -1,4 +1,6 @@
 ﻿// https://leetcode.com/problems/reverse-linked-list/submissions/
+using Helpers;
+
 var solution = new Solution();
 var printer = new ListPrinter();
 
@@ -37,34 +39,5 @@ public class Solution
         }
 
         return newHead;
-    }
-}
-
-// Definition for singly - linked list.
-public class ListNode
-{
-    public int val;
-    public ListNode next;
-    public ListNode(int val = 0, ListNode next = null)
-    {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-public class ListPrinter
-{
-    public void Print(ListNode head)
-    {
-        var values = new List<int>();
-
-        var current = head;
-        while (current != null)
-        {
-            values.Add(current.val);    
-            current = current.next;
-        }
-
-        Console.WriteLine(string.Join(", ", values));
     }
 }
