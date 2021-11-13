@@ -77,7 +77,11 @@ public class Solution
     private int Bfs(char[][] grid, int startRow, int startCol)
     {
         var queue = new Queue<State>();
-        var seen = new HashSet<State>();
+        var seen = new bool[grid.Length][];
+        for(var i = 0; i < grid.Length; i++)
+        {
+            seen[i] = new bool[grid[0].Length];
+        }
 
         queue.Enqueue(new State(startRow, startCol, 0));
 
@@ -105,9 +109,9 @@ public class Solution
                 }
 
                 var newState = new State(nextRow, nextCol, current.steps + 1);
-                if (!seen.Contains(newState))
+                if (!seen[nextRow][nextCol])
                 {
-                    seen.Add(newState);
+                    seen[nextRow][nextCol] = true;
                     queue.Enqueue(newState);
                 }
             }
@@ -128,19 +132,5 @@ public class State
         this.row = row;
         this.col = col;
         this.steps = steps;
-    }
-
-    public override int GetHashCode()
-    {
-        return (row + 1) * (col + 1);
-    }
-
-    public override bool Equals(Object other)
-    {
-        if (other is not State)
-            return false;
-
-        var newState = (State)other;
-        return row == newState.row && col == newState.col;
     }
 }
