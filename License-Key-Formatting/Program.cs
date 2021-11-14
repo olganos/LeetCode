@@ -13,26 +13,56 @@ var solution = new Solution();
 
 // Input: s = "5F3Z-2e-9-w", k = 4
 //Output: "5F3Z-2E9W"
-Console.WriteLine(solution.LicenseKeyFormatting("5F3Z-2e-9-w", 4));
+Console.WriteLine(solution.LicenseKeyFormatting2("5F3Z-2e-9-w", 4));
 
 // Input: s = "2-5g-3-J", k = 2
 // Output: "2-5G-3J"
-Console.WriteLine(solution.LicenseKeyFormatting("2-5g-3-J", 2));
+Console.WriteLine(solution.LicenseKeyFormatting2("2-5g-3-J", 2));
 
 // Input: s = "2-4A0r7-4k", k = 3
 // Output: "24-A0R-74K"
-Console.WriteLine(solution.LicenseKeyFormatting("2-4A0r7-4k", 3));
+Console.WriteLine(solution.LicenseKeyFormatting2("2-4A0r7-4k", 3));
 
 // Input: s = "--a-a-a-a--", k = 2
 // Output: "AA-AA"
-Console.WriteLine(solution.LicenseKeyFormatting("--a-a-a-a--", 2));
+Console.WriteLine(solution.LicenseKeyFormatting2("--a-a-a-a--", 2));
 
 // Input: s = "---", k = 3
 // Output: ""
-Console.WriteLine(solution.LicenseKeyFormatting("---", 3));
+Console.WriteLine(solution.LicenseKeyFormatting2("---", 3));
 
 public class Solution
 {
+    /// <summary>
+    /// Using stack
+    /// On leetcode this solution is slower and get more memory
+    /// </summary>
+    /// <param name="s"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
+    public string LicenseKeyFormatting2(string s, int k)
+    {
+        // Convert initial license key to the result       
+        var stack = new Stack<char>();   
+        var groupLengthCounter = 0;
+        for (var i = s.Length - 1; i >= 0; i--)
+        {
+            if (s[i] == '-')
+                continue;               
+
+            if (groupLengthCounter == k)
+            {
+                groupLengthCounter = 0;
+                stack.Push('-');
+            } 
+
+            groupLengthCounter++;
+            stack.Push(Char.ToUpper(s[i]));
+        }
+
+        return new String(stack.ToArray());
+    }
+
     /// <summary>
     /// using array
     /// </summary>
