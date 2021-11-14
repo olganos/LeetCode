@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindLeavesOfBinaryTree", "F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortestPathInAGridWithObstaclesElimination", "ShortestPathInAGridWithObstaclesElimination\ShortestPathInAGridWithObstaclesElimination.csproj", "{C3763655-EC52-45A9-8529-FD19F0FF98E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPathToGetFood", "ShortestPathToGetFood\ShortestPathToGetFood.csproj", "{98EBE396-B225-4263-AB30-83B7F89AA9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortestPathToGetFood", "ShortestPathToGetFood\ShortestPathToGetFood.csproj", "{98EBE396-B225-4263-AB30-83B7F89AA9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "License-Key-Formatting", "License-Key-Formatting\License-Key-Formatting.csproj", "{06DC1808-F06D-4A31-A58E-89653028CF53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{98EBE396-B225-4263-AB30-83B7F89AA9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98EBE396-B225-4263-AB30-83B7F89AA9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98EBE396-B225-4263-AB30-83B7F89AA9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06DC1808-F06D-4A31-A58E-89653028CF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06DC1808-F06D-4A31-A58E-89653028CF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06DC1808-F06D-4A31-A58E-89653028CF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06DC1808-F06D-4A31-A58E-89653028CF53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
