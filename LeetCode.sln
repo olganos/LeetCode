@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Longest-Absolute-File-Path"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Largest-Time-for-Given-Digits", "Largest-Time-for-Given-Digits\Largest-Time-for-Given-Digits.csproj", "{BEAFD0D1-961D-4ACC-87D0-1D75F8A15FC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First-Missing-Positive", "First-Missing-Positive\First-Missing-Positive.csproj", "{468330A2-91A4-4493-996D-6147912341EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{BEAFD0D1-961D-4ACC-87D0-1D75F8A15FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEAFD0D1-961D-4ACC-87D0-1D75F8A15FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEAFD0D1-961D-4ACC-87D0-1D75F8A15FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468330A2-91A4-4493-996D-6147912341EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468330A2-91A4-4493-996D-6147912341EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468330A2-91A4-4493-996D-6147912341EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468330A2-91A4-4493-996D-6147912341EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
