@@ -51,9 +51,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Largest-Time-for-Given-Digi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First-Missing-Positive", "First-Missing-Positive\First-Missing-Positive.csproj", "{468330A2-91A4-4493-996D-6147912341EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integer-to-English-Words", "Integer-to-English-Words\Integer-to-English-Words.csproj", "{E7EEB27D-A9F9-424B-9412-7155B63F93D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integer-to-English-Words", "Integer-to-English-Words\Integer-to-English-Words.csproj", "{E7EEB27D-A9F9-424B-9412-7155B63F93D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number-of-Lines-To-Write-String", "Number-of-Lines-To-Write-String\Number-of-Lines-To-Write-String.csproj", "{B709B7B5-5E53-494D-9433-B3887D9D1A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number-of-Lines-To-Write-String", "Number-of-Lines-To-Write-String\Number-of-Lines-To-Write-String.csproj", "{B709B7B5-5E53-494D-9433-B3887D9D1A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longest-Line-of-Consecutive-One-in-Matrix", "Longest-Line-of-Consecutive-One-in-Matrix\Longest-Line-of-Consecutive-One-in-Matrix.csproj", "{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
