@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integer-to-English-Words", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number-of-Lines-To-Write-String", "Number-of-Lines-To-Write-String\Number-of-Lines-To-Write-String.csproj", "{B709B7B5-5E53-494D-9433-B3887D9D1A99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-Words-in-a-String", "Reverse-Words-in-a-String\Reverse-Words-in-a-String.csproj", "{1FC7B462-AE44-4AF0-BB71-97A9BA2C3BAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B709B7B5-5E53-494D-9433-B3887D9D1A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC7B462-AE44-4AF0-BB71-97A9BA2C3BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC7B462-AE44-4AF0-BB71-97A9BA2C3BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC7B462-AE44-4AF0-BB71-97A9BA2C3BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC7B462-AE44-4AF0-BB71-97A9BA2C3BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
