@@ -55,10 +55,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number-of-Lines-To-Write-St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Longest-Line-of-Consecutive-One-in-Matrix", "Longest-Line-of-Consecutive-One-in-Matrix\Longest-Line-of-Consecutive-One-in-Matrix.csproj", "{8EEBD261-9DD5-4D04-B66D-CD6EA352FE68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate-List", "Rotate-List\Rotate-List.csproj", "{4292DCCF-2128-410C-BD66-DDE90B414C51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rotate-List", "Rotate-List\Rotate-List.csproj", "{4292DCCF-2128-410C-BD66-DDE90B414C51}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6D121D7C-9947-460C-A00A-856D9E029066} = {6D121D7C-9947-460C-A00A-856D9E029066}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{5534098F-B42B-4D62-85E1-AF0AA8370B2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combinations", "Combinations\Combinations.csproj", "{8F948738-E9B2-410F-BFD3-71C24A99426F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -174,6 +178,14 @@ Global
 		{4292DCCF-2128-410C-BD66-DDE90B414C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4292DCCF-2128-410C-BD66-DDE90B414C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4292DCCF-2128-410C-BD66-DDE90B414C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5534098F-B42B-4D62-85E1-AF0AA8370B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5534098F-B42B-4D62-85E1-AF0AA8370B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5534098F-B42B-4D62-85E1-AF0AA8370B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5534098F-B42B-4D62-85E1-AF0AA8370B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
