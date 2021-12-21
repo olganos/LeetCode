@@ -60,9 +60,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rotate-List", "Rotate-List\
 		{6D121D7C-9947-460C-A00A-856D9E029066} = {6D121D7C-9947-460C-A00A-856D9E029066}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{5534098F-B42B-4D62-85E1-AF0AA8370B2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Permutations", "Permutations\Permutations.csproj", "{5534098F-B42B-4D62-85E1-AF0AA8370B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combinations", "Combinations\Combinations.csproj", "{8F948738-E9B2-410F-BFD3-71C24A99426F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Combinations", "Combinations\Combinations.csproj", "{8F948738-E9B2-410F-BFD3-71C24A99426F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations-II", "Permutations-II\Permutations-II.csproj", "{3424F0B1-EC4D-4FAF-857C-83AA6814580A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -186,6 +188,10 @@ Global
 		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F948738-E9B2-410F-BFD3-71C24A99426F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3424F0B1-EC4D-4FAF-857C-83AA6814580A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3424F0B1-EC4D-4FAF-857C-83AA6814580A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3424F0B1-EC4D-4FAF-857C-83AA6814580A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3424F0B1-EC4D-4FAF-857C-83AA6814580A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
