@@ -15,9 +15,45 @@ var solution = new Solution();
 Console.WriteLine(solution.Combine(4, 2));
 
 /// <summary>
+/// Leedcode's solution
+/// </summary>
+class Solution
+{
+    public IList<IList<int>> Combine(int n, int k)
+    {
+        // init first combination
+        var nums = new int[k + 1];
+        for (int i = 0; i < k; ++i)
+            nums[i] = i + 1;
+        nums[k] = n + 1;
+
+        var output = new List<IList<int>>();
+        int j = 0;
+        while (j < k)
+        {
+            // add current combination
+            output.Add(new List<int>(nums.Take(k)));
+            // increase first nums[j] by one
+            // if nums[j] + 1 != nums[j + 1]
+            j = 0;
+            while ((j < k) && (nums[j + 1] == nums[j] + 1))
+            {
+                var _1 = nums[j + 1];
+                var _2 = nums[j] + 1;
+                //var newValue =;
+                nums[j] = j++ + 1;
+                var newValue = nums[j];
+            }
+            nums[j] = nums[j] + 1;
+        }
+        return output;
+    }
+}
+
+/// <summary>
 /// My solution from memory
 /// </summary>
-public class Solution
+public class Solution1
 {
     private int k;
     private int n;
