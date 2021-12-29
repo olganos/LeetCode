@@ -18,7 +18,66 @@ Console.WriteLine(solution.FirstMissingPositive(new[] { 3, 4, -1, 1 }));
 solution = new Solution();
 Console.WriteLine(solution.FirstMissingPositive(new[] { 7, 8, 9, 11, 12 }));
 
-class Solution
+/// <summary>
+/// space O(1) approach
+/// </summary>
+public class Solution
+{
+    public int FirstMissingPositive(int[] nums)
+    {
+        // check if 1 exists
+        var oneExists = 0;
+        for (var i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] == 1)
+            {
+                oneExists++;
+                break;
+            }
+        }
+
+        if (oneExists == 0)
+            return 1;
+
+        // replace 0, negative and numbers equal or more than length by 1
+        for (var i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] <= 0 || nums[i] > nums.Length)
+                nums[i] = 1;
+        }
+
+        // convert indeces of existing numbers to negative
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var checkingIndex = Math.Abs(nums[i]);
+            if (checkingIndex == nums.Length)
+                nums[0] = -Math.Abs(nums[0]);
+            else
+                nums[checkingIndex] = -Math.Abs(nums[checkingIndex]);
+        }
+
+        // check missing number
+        for (var i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] > 0)
+            {
+                return i;
+            }
+        }
+
+        if (nums[0] > 0)
+        {
+            return nums.Length;
+        }
+
+        return nums.Length + 1;
+    }
+}
+
+/// <summary>
+/// Space O(n) approach
+/// </summary>
+class Solution2
 {
     private HashSet<int> exists = new HashSet<int>();
 
