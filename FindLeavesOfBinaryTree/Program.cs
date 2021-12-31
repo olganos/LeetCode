@@ -1,4 +1,6 @@
-﻿var tree = new TreeNode(1,
+﻿using Helpers;
+
+var tree = new TreeNode(1,
     new TreeNode(2,
         new TreeNode(4),
         new TreeNode(5)),
@@ -63,20 +65,6 @@ public class Solution
         {
             leaves.Enqueue(new QueueItem { node = node, isLeft = false });
         }
-    }
-}
-
-// Definition for a binary tree node.
-public class TreeNode
-{
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-    {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
 

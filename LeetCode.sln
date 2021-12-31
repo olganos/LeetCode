@@ -36,6 +36,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helpers", "Helpers\Helpers.csproj", "{6D121D7C-9947-460C-A00A-856D9E029066}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindLeavesOfBinaryTree", "FindLeavesOfBinaryTree\FindLeavesOfBinaryTree.csproj", "{419537FE-F9EF-403A-AF75-59F2C9717FA2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D121D7C-9947-460C-A00A-856D9E029066} = {6D121D7C-9947-460C-A00A-856D9E029066}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortestPathInAGridWithObstaclesElimination", "ShortestPathInAGridWithObstaclesElimination\ShortestPathInAGridWithObstaclesElimination.csproj", "{C3763655-EC52-45A9-8529-FD19F0FF98E1}"
 EndProject
@@ -69,6 +72,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic-Calculator-II", "Basic-Calculator-II\Basic-Calculator-II.csproj", "{169AD02F-59F9-4B27-9201-3C8223129EB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sign-of-the-Product-of-an-Array", "Sign-of-the-Product-of-an-Array\Sign-of-the-Product-of-an-Array.csproj", "{95958875-4768-4206-A63F-215416AFDAB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count-Good-Nodes-in-Binary-Tree", "Count-Good-Nodes-in-Binary-Tree\Count-Good-Nodes-in-Binary-Tree.csproj", "{551F7038-A712-42CB-A9D4-115C4363BE8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -204,6 +209,10 @@ Global
 		{95958875-4768-4206-A63F-215416AFDAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95958875-4768-4206-A63F-215416AFDAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95958875-4768-4206-A63F-215416AFDAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551F7038-A712-42CB-A9D4-115C4363BE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551F7038-A712-42CB-A9D4-115C4363BE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551F7038-A712-42CB-A9D4-115C4363BE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551F7038-A712-42CB-A9D4-115C4363BE8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
