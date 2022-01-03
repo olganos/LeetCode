@@ -1,9 +1,8 @@
 ﻿using System.Text;
-using System.Collections.Generic;
 
 // https://leetcode.com/problems/longest-happy-string/
 
-var solution = new Solution();
+var solution = new Solution2();
 // Input: a = 1, b = 1, c = 7
 
 // Output: "ccaccbcc" or "ccbccacc"
@@ -27,7 +26,11 @@ Console.WriteLine(solution.LongestDiverseString(3, 0, 4));
 
 // Input: a = 0, b = 8, c = 11
 // Output: "ccbccbbccbbccbbccbc"
-Console.WriteLine(new Solution2().LongestDiverseString(0, 8, 11));
+Console.WriteLine(solution.LongestDiverseString(0, 8, 11));
+
+// Input: a = 2, b = 8, c = 10
+// Output: "ccbbccbbccbbccaabbcc"
+Console.WriteLine(solution.LongestDiverseString(2, 8, 10));
 
 /// <summary>
 /// From leetcode, with priority queue
@@ -53,13 +56,13 @@ public class Solution
             var current = queue.Dequeue();
             if (current.Char == last)
             {
-                if (queue.Count == 0) 
+                if (queue.Count == 0)
                     return sb.ToString();
 
                 var next = queue.Dequeue();
                 sb.Append(next.Char);
                 next.Count--;
-                if (next.Count > 0) 
+                if (next.Count > 0)
                     queue.Enqueue(next, next.Count * (-1));
 
                 queue.Enqueue(current, current.Count * (-1));
@@ -72,7 +75,7 @@ public class Solution
                     sb.Append(current.Char);
                     sb.Append(current.Char);
                     current.Count -= 2;
-                    if (current.Count > 0) 
+                    if (current.Count > 0)
                         queue.Enqueue(current, current.Count * (-1));
                 }
                 else
@@ -97,126 +100,90 @@ public class Solution
 }
 
 /// <summary>
-/// My, wrong solution
+/// My solution, rewrote after I understood PriorityQueue solution.
+/// In C# PriorityQueues appared in C# 10, but on Leetcode is C# 9.
+/// So I understood the solution and rewrote mine.
 /// </summary>
 public class Solution2
 {
     public string LongestDiverseString(int a, int b, int c)
     {
-        var chars = new Char[] {
-            new Char('a', a),
-            new Char('b', b),
-            new Char('c', c) ,
+        var chars = new Dictionary<char, int>
+        {
+            { 'a', a },
+            { 'b', b },
+            { 'c', c }
         };
-
-        var max = GetMax(a, b, c);
-        var min = GetMin(a, b, c);
-        var medium = GetMedium(chars, min, max);
 
         var stringBuilding = new StringBuilder();
         var lastChar = ' ';
-        var next = medium;
-
         while (true)
         {
-            if (max.Value == 0 && min.Value == 0 && medium.Value == 0)
+            var max = GetMax(chars);
+            if (max.Count == 0)
                 break;
-            if (lastChar == max.Key)
-                break;
 
-            if (max.Value != 0)
+            if (max.Character != lastChar)
             {
-                stringBuilding.Append(max.Key);
-                max.Value--;
-                if (max.Value != 0)
+                if (max.Count >= 2)
                 {
-                    stringBuilding.Append(max.Key);
-                    max.Value--;
+                    stringBuilding.Append(max.Character);
+                    stringBuilding.Append(max.Character);
+                    chars[max.Character] -= 2;
                 }
+                else
+                {
+                    stringBuilding.Append(max.Character);
+                    chars[max.Character] -= 1;
+                }
+
+                lastChar = max.Character;
             }
-
-            lastChar = max.Key;
-
-            if (next.Key == medium.Key && medium.Value != 0)
+            else
             {
-                stringBuilding.Append(medium.Key);
-                medium.Value--;
-                if (medium.Value != 0)
-                {
-                    stringBuilding.Append(medium.Key);
-                    medium.Value--;
-                }
+                var medium = GetMedium(chars, max);
+                if (medium.Count == 0)
+                    break;
 
-                next = min.Value != 0 ? min : medium;
-                lastChar = medium.Key;
-                continue;
-            }
-
-            if (next.Key == min.Key && min.Value != 0)
-            {
-                stringBuilding.Append(min.Key);
-                min.Value--;
-                if (min.Value != 0)
-                {
-                    stringBuilding.Append(min.Key);
-                    min.Value--;
-                }
-
-                next = medium.Value != 0 ? medium : min;
-                lastChar = min.Key;
-                continue;
+                stringBuilding.Append(medium.Character);
+                chars[medium.Character] -= 1;
+                lastChar = medium.Character;
             }
         }
 
         return stringBuilding.ToString();
     }
 
-    private Char GetMax(int a, int b, int c)
+    private Char GetMax(Dictionary<char, int> chars)
     {
-        var max = new Char('a', a);
-        if (max.Value < b)
-        {
-            max = new Char('b', b);
-        }
-
-        if (max.Value < c)
-        {
-            max = new Char('c', c);
-        }
-
-        return max;
+        return chars
+            .Select(x => new Char(x.Key, x.Value))
+            .Max();
     }
 
-    private Char GetMin(int a, int b, int c)
+    private Char GetMedium(Dictionary<char, int> chars, Char max)
     {
-        var min = new Char('a', a);
-        if (min.Value > b)
-        {
-            min = new Char('b', b);
-        }
-
-        if (min.Value > c)
-        {
-            min = new Char('c', c);
-        }
-
-        return min;
+        var min = chars
+            .Select(x => new Char(x.Key, x.Value))
+            .Min();
+        var medium = chars.First(x => x.Key != max.Character && x.Key != min.Character);
+        return new Char(medium.Key, medium.Value);
     }
 
-    private Char GetMedium(Char[] chars, Char min, Char max)
-    {
-        return chars.First(x => x.Key != max.Key && x.Key != min.Key);
-    }
-
-    private struct Char
+    private struct Char : IComparable<Char>
     {
         public Char(char value, int count)
         {
-            Key = value;
-            Value = count;
+            Character = value;
+            Count = count;
         }
 
-        public char Key { get; set; }
-        public int Value { get; set; }
+        public char Character { get; set; }
+        public int Count { get; set; }
+
+        public int CompareTo(Char other)
+        {
+            return Count - other.Count;
+        }
     }
 }
