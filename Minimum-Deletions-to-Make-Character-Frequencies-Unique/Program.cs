@@ -1,6 +1,6 @@
 ﻿// https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
 
-var solution = new Solution2();
+var solution = new Solution();
 
 // Input: "aab"
 // Output: 0
