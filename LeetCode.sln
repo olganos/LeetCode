@@ -79,9 +79,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Longest-Happy-String", "Lon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimum-Deletions-to-Make-Character-Frequencies-Unique", "Minimum-Deletions-to-Make-Character-Frequencies-Unique\Minimum-Deletions-to-Make-Character-Frequencies-Unique.csproj", "{45B811BD-F237-402D-B7DE-41B0CDB688B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gas-Station", "Gas-Station\Gas-Station.csproj", "{49FE812D-9E3F-4B12-AD34-90C7DA8DF08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gas-Station", "Gas-Station\Gas-Station.csproj", "{49FE812D-9E3F-4B12-AD34-90C7DA8DF08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two-Sum", "Two-Sum\Two-Sum.csproj", "{58B80065-F722-4EE0-9269-14AC470B96A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Two-Sum", "Two-Sum\Two-Sum.csproj", "{58B80065-F722-4EE0-9269-14AC470B96A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort-colors", "Sort-colors\Sort-colors.csproj", "{7153336A-76A7-43B1-B1CA-D908E8832D3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,10 @@ Global
 		{58B80065-F722-4EE0-9269-14AC470B96A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B80065-F722-4EE0-9269-14AC470B96A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58B80065-F722-4EE0-9269-14AC470B96A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7153336A-76A7-43B1-B1CA-D908E8832D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7153336A-76A7-43B1-B1CA-D908E8832D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7153336A-76A7-43B1-B1CA-D908E8832D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7153336A-76A7-43B1-B1CA-D908E8832D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
